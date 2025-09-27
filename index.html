@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giveaway Steven Stenly</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      text-align: center;
+    }
+    header {
+      background: #333;
+      color: white;
+      padding: 15px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .container {
+      padding: 20px;
+    }
+    iframe {
+      max-width: 100%;
+      border-radius: 10px;
+      border: none;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 18px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #0056b3;
+    }
+    /* Hadiah (disembunyikan dulu) */
+    .reward-section {
+      display: none;
+      margin-top: 30px;
+    }
+    .reward {
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      max-width: 400px;
+    }
+    .reward h2 {
+      margin-bottom: 15px;
+    }
+    .reward .btn {
+      background: #28a745;
+    }
+    .reward .btn:hover {
+      background: #1e7e34;
+    }
+  </style>
+</head>
+<body>
+  <header>🎥 Giveaway Steven Stenly</header>
+
+  <div class="container">
+    <!-- Video -->
+    <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/955909483099615"
+            width="400" height="480" allowfullscreen></iframe>
+    <br>
+    <!-- Tombol Lanjutkan -->
+    <button class="btn" onclick="lanjutkan()">Lanjutkan ➝</button>
+
+    <!-- Bagian Hadiah (muncul setelah tombol diklik) -->
+    <div class="reward-section" id="hadiah">
+      <div class="reward">
+        <h2>💰 Hadiah Rp20 Juta</h2>
+        <a class="btn" href="https://haberdasherycorpse.com/sdhuv7d1?key=f3668e6b940efe6c67022165450dc061" target="_blank">Klaim Sekarang</a>
+      </div>
+      <div class="reward">
+        <h2>💎 Hadiah Rp50 Juta</h2>
+        <a class="btn" href="https://haberdasherycorpse.com/sdhuv7d1?key=f3668e6b940efe6c67022165450dc061" target="_blank">Klaim Sekarang</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function lanjutkan() {
+      // buka Adsterra di tab baru
+      window.open("https://haberdasherycorpse.com/sdhuv7d1?key=f3668e6b940efe6c67022165450dc061", "_blank");
+      // tampilkan hadiah
+      document.getElementById("hadiah").style.display = "block";
+      // scroll ke hadiah
+      document.getElementById("hadiah").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+</body>
+</html>
