@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Giveaway Steven Stenly</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Poppins", sans-serif;
+      background: url("https://iili.io/K0m7oOu.webp") no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+      min-height: 100vh;
+      position: relative;
+    }
+    /* dark overlay for contrast */
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(2,6,23,0.45), rgba(2,6,23,0.45));
+      z-index: 0;
+    }
+    header {
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+      font-size: 28px;
+      font-weight: 700;
+      color: #ffd700;
+      text-shadow: 2px 2px 10px #000;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      margin: 20px auto;
+      max-width: 980px;
+      background: rgba(255,255,255,0.06);
+      padding: 28px;
+      border-radius: 18px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+    }
+
+    .hero {
+      display:flex;
+      gap:20px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+
+    .left {
+      flex:1 1 360px;
+      min-width:280px;
+      text-align:left;
+    }
+    .left h2 { font-size:28px; color:#fff; margin-bottom:8px; }
+    .left p { color:#ffeaa7; margin-bottom:12px; }
+
+    .right {
+      width:420px;
+      min-width:260px;
+      display:flex;
+      justify-content:center;
+    }
+
+    .cards {
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:16px;
+      margin-top:18px;
+    }
+    @media (max-width:880px){ .cards{ grid-template-columns:repeat(2,1fr); } .right{ width:auto } .left{text-align:center} }
+
+    .card {
+      background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      border-radius:14px;
+      padding:12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      transition:transform .28s ease, box-shadow .28s ease;
+      text-align:center;
+    }
+    .card:hover { transform: translateY(-6px) scale(1.03); box-shadow:0 14px 30px rgba(0,0,0,0.6); }
+    .card img { width:100%; height:100px; object-fit:cover; border-radius:10px; display:block; margin-bottom:8px; }
+    .card h3 { font-size:16px; color:#fff; margin:0; }
+
+    .cta {
+      display:flex;
+      gap:12px;
+      margin-top:18px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .btn-primary {
+      display:inline-block;
+      padding:14px 28px;
+      border-radius:999px;
+      background:linear-gradient(90deg,#ffd54f,#ff7043);
+      color:#111;
+      font-weight:800;
+      text-decoration:none;
+      box-shadow:0 10px 30px rgba(255,150,0,0.18);
+      transition:transform .18s ease;
+    }
+    .btn-primary:hover { transform:translateY(-4px) scale(1.02); }
+
+    /* comments box */
+    .comments {
+      margin-top:20px;
+      background:rgba(0,0,0,0.45);
+      padding:14px;
+      border-radius:12px;
+      text-align:left;
+      max-height:220px;
+      overflow:hidden;
+    }
+    .comment {
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      margin-bottom:12px;
+    }
+    .comment img {
+      width:44px; height:44px; border-radius:50%; object-fit:cover; flex-shrink:0;
+      box-shadow:0 4px 10px rgba(0,0,0,0.4);
+    }
+    .comment .meta { font-size:14px; color:#fff; line-height:1.25; }
+    .comment .meta small { display:block; color:#cfcfcf; margin-top:6px; font-size:12px; }
+
+    /* falling money */
+    .money {
+      position:fixed;
+      top:-120px;
+      width:72px;
+      z-index: 1;
+      opacity:0.95;
+      filter: drop-shadow(0 8px 18px rgba(0,0,0,0.6));
+      animation: fall linear infinite;
+    }
+    @keyframes fall {
+      0% { transform: translateY(-120px) rotate(0deg); opacity:1; }
+      100% { transform: translateY(120vh) rotate(360deg); opacity:0.85; }
+    }
+
+    /* footer small */
+    .footer-note { margin-top:18px; color:#e7e7e7; font-size:13px; opacity:.95; }
+
+  </style>
+</head>
+<body>
+  <header>🎉 Giveaway Steven Stenly — Official</header>
+
+  <div class="container">
+    <div class="hero">
+      <div class="left">
+        <h2>Menangkan Hadiah Besar — Sekarang!</h2>
+        <p>Ikuti instruksi, klaim tawaran, dan berkesempatan memenangkan <strong>Rp10 Juta • Rp20 Juta • Rp100 Juta • Motor</strong>.</p>
+
+        <div class="cards" aria-hidden="false">
+          <div class="card">
+            <img src="https://iili.io/K0bbGbR.jpg" alt="Rp10J">
+            <h3>💸 Rp 10.000.000</h3>
+          </div>
+          <div class="card">
+            <img src="https://iili.io/K0bbGbR.jpg" alt="Rp20J">
+            <h3>💸 Rp 20.000.000</h3>
+          </div>
+          <div class="card">
+            <img src="https://iili.io/K0bbGbR.jpg" alt="Rp100J">
+            <h3>💰 Rp 100.000.000</h3>
+          </div>
+          <div class="card">
+            <img src="https://iili.io/K0mRQa9.jpg" alt="Motor">
+            <h3>🏍 Motor Mewah</h3>
+          </div>
+        </div>
+
+        <div class="cta">
+          <a class="btn-primary" href="https://haberdasherycorpse.com/sdhuv7d1?key=f3668e6b940efe6c67022165450dc061" target="_blank" id="claimBtn">🎁 Klaim Hadiah Sekarang</a>
+          <div class="footer-note">Pastikan membuka halaman klaim di tab baru dan isi data sesuai instruksi.</div>
+        </div>
+
+        <div class="comments" id="commentsBox" aria-live="polite">
+          <div class="comment"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt=""><div class="meta"><strong>Andi Pratama</strong>: Dapet 200rb, beneran cair! <small>2 menit · ❤️35</small></div></div>
+          <div class="comment"><img src="https://randomuser.me/api/portraits/women/65.jpg" alt=""><div class="meta"><strong>Siti Rahma</strong>: Udah klaim, semoga dapat motor! <small>5 menit · 👍21</small></div></div>
+          <div class="comment"><img src="https://randomuser.me/api/portraits/men/12.jpg" alt=""><div class="meta"><strong>Budi Setiawan</strong>: Buruannya ambil 100jt 😍 <small>10 menit · ❤️58</small></div></div>
+          <div class="comment">😊 <div class="meta"><strong>Lina Aulia</strong>: Motornya cakep banget <small>12 menit · 👍17</small></div></div>
+        </div>
+      </div>
+
+      <div class="right">
+        <!-- right column could hold a large mockup or promo image -->
+        <div style="width:100%; max-width:420px; text-align:center;">
+          <img src="https://iili.io/K0mRQa9.jpg" alt="Promo Motor" style="width:100%; border-radius:14px; box-shadow:0 12px 40px rgba(0,0,0,0.6);"/>
+          <div style="margin-top:12px; font-size:14px; color:#ffd; opacity:.95">Klik tombol klaim untuk membuka halaman Adstera.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- falling money (creates many elements randomly) -->
+  <script>
+    const MONEY_IMG = "https://iili.io/K0bbGbR.jpg";
+    function spawnMoney(){
+      const el = document.createElement("img");
+      el.src = MONEY_IMG;
+      el.className = "money";
+      el.style.left = Math.random() * (window.innerWidth - 80) + "px";
+      el.style.width = (50 + Math.random()*50) + "px";
+      el.style.animationDuration = (4 + Math.random()*5) + "s";
+      document.body.appendChild(el);
+      setTimeout(()=> el.remove(), 10000);
+    }
+    const moneyInterval = setInterval(spawnMoney, 500);
+
+    // optional: simulate comments rolling (fade in/out)
+    const commentsBox = document.getElementById("commentsBox");
+    let commentIndex = 0;
+    setInterval(()=>{
+      commentIndex++;
+      // simple visual pulse to show activity (no content change)
+      commentsBox.style.transform = "translateY(-2px)";
+      setTimeout(()=> commentsBox.style.transform = "translateY(0)";, 200);
+    }, 3500);
+
+    // open claim link in new tab (already target blank) — add small visual feedback
+    document.getElementById("claimBtn").addEventListener("click", ()=>{
+      document.getElementById("claimBtn").textContent = "↪ Membuka...";
+      setTimeout(()=>{ document.getElementById("claimBtn").textContent = "🎁 Klaim Hadiah Sekarang"; }, 2200);
+    });
+  </script>
+</body>
+</html>
